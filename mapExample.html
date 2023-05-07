@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ad61c5db3421477748c18af24336de61 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ad61c5db3421477748c18af24336de61" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ad61c5db3421477748c18af24336de61 = L.map(
+                "map_ad61c5db3421477748c18af24336de61",
+                {
+                    center: [34.08428105902778, -118.36844264930548],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4e9338b6c9868039a057aa4268abc712 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ad61c5db3421477748c18af24336de61);
+        
+    
+        function geo_json_02a6f8ece7b09b4ca2f72f4e909af069_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#5cad00", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_02a6f8ece7b09b4ca2f72f4e909af069_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_02a6f8ece7b09b4ca2f72f4e909af069 = L.geoJson(null, {
+                onEachFeature: geo_json_02a6f8ece7b09b4ca2f72f4e909af069_onEachFeature,
+            
+                style: geo_json_02a6f8ece7b09b4ca2f72f4e909af069_styler,
+        });
+
+        function geo_json_02a6f8ece7b09b4ca2f72f4e909af069_add (data) {
+            geo_json_02a6f8ece7b09b4ca2f72f4e909af069
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_02a6f8ece7b09b4ca2f72f4e909af069_add({"features": [{"geometry": {"coordinates": [[[-118.361452, 34.080191], [-118.359414, 34.0802], [-118.357361, 34.08021], [-118.35634, 34.080214], [-118.353219, 34.080228], [-118.353211, 34.076139], [-118.356331, 34.076127], [-118.357352, 34.076122], [-118.358372, 34.076118], [-118.36143, 34.076104], [-118.361452, 34.080191]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037214400", "census_tract_name": "Census Tract 2144", "cluster": 6, "color": [0.3607843137254902, 0.6816455209534794, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 0.0, "num_charging_stations_range": [12.0, 34.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_02a6f8ece7b09b4ca2f72f4e909af069.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_086a9f91b2fd11e7efca0154c09ad179_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#ffe800", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_086a9f91b2fd11e7efca0154c09ad179_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_086a9f91b2fd11e7efca0154c09ad179 = L.geoJson(null, {
+                onEachFeature: geo_json_086a9f91b2fd11e7efca0154c09ad179_onEachFeature,
+            
+                style: geo_json_086a9f91b2fd11e7efca0154c09ad179_styler,
+        });
+
+        function geo_json_086a9f91b2fd11e7efca0154c09ad179_add (data) {
+            geo_json_086a9f91b2fd11e7efca0154c09ad179
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_086a9f91b2fd11e7efca0154c09ad179_add({"features": [{"geometry": {"coordinates": [[[-118.36143, 34.076104], [-118.358372, 34.076118], [-118.357352, 34.076122], [-118.356331, 34.076127], [-118.353211, 34.076139], [-118.353194, 34.070346], [-118.355208, 34.070655], [-118.355668, 34.070033], [-118.355482, 34.069726], [-118.357908, 34.067693], [-118.357885, 34.067258], [-118.355186, 34.064983], [-118.355186, 34.064877], [-118.359252, 34.064867], [-118.361383, 34.064881], [-118.3614, 34.069012], [-118.361401, 34.069055], [-118.361411, 34.071516], [-118.36143, 34.076104]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037214501", "census_tract_name": "Census Tract 2145.01", "cluster": 6, "color": [1.0, 0.9098039215686274, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 3.0, "num_charging_stations_range": [3.0, 12.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_086a9f91b2fd11e7efca0154c09ad179.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_5a478d1b59c47b1258a74c61e4bfb71e_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#8ac400", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_5a478d1b59c47b1258a74c61e4bfb71e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_5a478d1b59c47b1258a74c61e4bfb71e = L.geoJson(null, {
+                onEachFeature: geo_json_5a478d1b59c47b1258a74c61e4bfb71e_onEachFeature,
+            
+                style: geo_json_5a478d1b59c47b1258a74c61e4bfb71e_styler,
+        });
+
+        function geo_json_5a478d1b59c47b1258a74c61e4bfb71e_add (data) {
+            geo_json_5a478d1b59c47b1258a74c61e4bfb71e
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_5a478d1b59c47b1258a74c61e4bfb71e_add({"features": [{"geometry": {"coordinates": [[[-118.369102, 34.090687], [-118.368853, 34.091752], [-118.368872, 34.094341], [-118.368901, 34.097332], [-118.368961, 34.09781], [-118.368168, 34.097087], [-118.365946, 34.097119], [-118.361652, 34.097178], [-118.361541, 34.094535], [-118.361542, 34.094455], [-118.361493, 34.09183], [-118.361356, 34.090808], [-118.361443, 34.087201], [-118.362712, 34.088787], [-118.365903, 34.088932], [-118.366443, 34.088924], [-118.366961, 34.087133], [-118.369088, 34.087101], [-118.369087, 34.08868], [-118.369102, 34.090687]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037700200", "census_tract_name": "Census Tract 7002", "cluster": 8, "color": [0.5411764705882353, 0.7714878892733563, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 3.0, "num_charging_stations_range": [46.0, 172.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_5a478d1b59c47b1258a74c61e4bfb71e.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_9a647682ab472ce051d5bcca6743587e_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#e8f300", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_9a647682ab472ce051d5bcca6743587e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9a647682ab472ce051d5bcca6743587e = L.geoJson(null, {
+                onEachFeature: geo_json_9a647682ab472ce051d5bcca6743587e_onEachFeature,
+            
+                style: geo_json_9a647682ab472ce051d5bcca6743587e_styler,
+        });
+
+        function geo_json_9a647682ab472ce051d5bcca6743587e_add (data) {
+            geo_json_9a647682ab472ce051d5bcca6743587e
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_9a647682ab472ce051d5bcca6743587e_add({"features": [{"geometry": {"coordinates": [[[-118.378802, 34.07639], [-118.377167, 34.076592], [-118.377248, 34.080207], [-118.375264, 34.080159], [-118.374202, 34.082019], [-118.374209, 34.080161], [-118.370294, 34.080169], [-118.369036, 34.080131], [-118.366912, 34.080137], [-118.362651, 34.080147], [-118.361452, 34.080191], [-118.36143, 34.076104], [-118.365844, 34.076085], [-118.366891, 34.07608], [-118.370008, 34.076067], [-118.376589, 34.076037], [-118.377808, 34.076044], [-118.378802, 34.07639]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037194500", "census_tract_name": "Census Tract 1945", "cluster": 2, "color": [0.9098039215686274, 0.9550788158400615, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 3.0, "num_charging_stations_range": [6.0, 21.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_9a647682ab472ce051d5bcca6743587e.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_178afb475361ef3f8b10d00b0567e468_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#badc00", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_178afb475361ef3f8b10d00b0567e468_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_178afb475361ef3f8b10d00b0567e468 = L.geoJson(null, {
+                onEachFeature: geo_json_178afb475361ef3f8b10d00b0567e468_onEachFeature,
+            
+                style: geo_json_178afb475361ef3f8b10d00b0567e468_styler,
+        });
+
+        function geo_json_178afb475361ef3f8b10d00b0567e468_add (data) {
+            geo_json_178afb475361ef3f8b10d00b0567e468
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_178afb475361ef3f8b10d00b0567e468_add({"features": [{"geometry": {"coordinates": [[[-118.365346, 34.097996], [-118.365476, 34.101708], [-118.364292, 34.101273], [-118.361567, 34.10131], [-118.359623, 34.101686], [-118.358207, 34.101684], [-118.358166, 34.094431], [-118.361542, 34.094455], [-118.361541, 34.094535], [-118.361652, 34.097178], [-118.365946, 34.097119], [-118.365346, 34.097996]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037189801", "census_tract_name": "Census Tract 1898.01", "cluster": 7, "color": [0.7294117647058823, 0.8652364475201846, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 2.0, "num_charging_stations_range": [8.0, 18.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_178afb475361ef3f8b10d00b0567e468.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_6dd4ee931d2c2ea6647ac4834bb4371d_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#e8f300", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_6dd4ee931d2c2ea6647ac4834bb4371d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6dd4ee931d2c2ea6647ac4834bb4371d = L.geoJson(null, {
+                onEachFeature: geo_json_6dd4ee931d2c2ea6647ac4834bb4371d_onEachFeature,
+            
+                style: geo_json_6dd4ee931d2c2ea6647ac4834bb4371d_styler,
+        });
+
+        function geo_json_6dd4ee931d2c2ea6647ac4834bb4371d_add (data) {
+            geo_json_6dd4ee931d2c2ea6647ac4834bb4371d
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_6dd4ee931d2c2ea6647ac4834bb4371d_add({"features": [{"geometry": {"coordinates": [[[-118.361542, 34.094455], [-118.358166, 34.094431], [-118.356664, 34.09442], [-118.354998, 34.094409], [-118.353908, 34.094401], [-118.351728, 34.094385], [-118.349537, 34.094368], [-118.347906, 34.094356], [-118.347158, 34.09435], [-118.344086, 34.094327], [-118.343382, 34.094328], [-118.34338, 34.090699], [-118.347243, 34.090718], [-118.351805, 34.090753], [-118.35498, 34.090777], [-118.355335, 34.090773], [-118.357403, 34.090794], [-118.358022, 34.090805], [-118.361356, 34.090808], [-118.361493, 34.09183], [-118.361542, 34.094455]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037700101", "census_tract_name": "Census Tract 7001.01", "cluster": 8, "color": [0.9098039215686274, 0.9550788158400615, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 16.0, "num_charging_stations_range": [16.0, 46.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_6dd4ee931d2c2ea6647ac4834bb4371d.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_020ba23c3bc8ad862b25fb67d2491a3e_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#badc00", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_020ba23c3bc8ad862b25fb67d2491a3e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_020ba23c3bc8ad862b25fb67d2491a3e = L.geoJson(null, {
+                onEachFeature: geo_json_020ba23c3bc8ad862b25fb67d2491a3e_onEachFeature,
+            
+                style: geo_json_020ba23c3bc8ad862b25fb67d2491a3e_styler,
+        });
+
+        function geo_json_020ba23c3bc8ad862b25fb67d2491a3e_add (data) {
+            geo_json_020ba23c3bc8ad862b25fb67d2491a3e
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_020ba23c3bc8ad862b25fb67d2491a3e_add({"features": [{"geometry": {"coordinates": [[[-118.36133, 34.085413], [-118.361443, 34.087201], [-118.357395, 34.087166], [-118.354273, 34.08714], [-118.353233, 34.087132], [-118.3528, 34.087129], [-118.351113, 34.087115], [-118.35111, 34.085315], [-118.348656, 34.085295], [-118.348646, 34.080248], [-118.353219, 34.080228], [-118.35634, 34.080214], [-118.357361, 34.08021], [-118.359414, 34.0802], [-118.361452, 34.080191], [-118.36133, 34.085413]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037192002", "census_tract_name": "Census Tract 1920.02", "cluster": 2, "color": [0.7294117647058823, 0.8652364475201846, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 0.0, "num_charging_stations_range": [3.0, 6.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_020ba23c3bc8ad862b25fb67d2491a3e.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_b6426f412e911ebd10273df0788bc8b4_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#badc00", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_b6426f412e911ebd10273df0788bc8b4_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b6426f412e911ebd10273df0788bc8b4 = L.geoJson(null, {
+                onEachFeature: geo_json_b6426f412e911ebd10273df0788bc8b4_onEachFeature,
+            
+                style: geo_json_b6426f412e911ebd10273df0788bc8b4_styler,
+        });
+
+        function geo_json_b6426f412e911ebd10273df0788bc8b4_add (data) {
+            geo_json_b6426f412e911ebd10273df0788bc8b4
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_b6426f412e911ebd10273df0788bc8b4_add({"features": [{"geometry": {"coordinates": [[[-118.361356, 34.090808], [-118.358022, 34.090805], [-118.357403, 34.090794], [-118.355335, 34.090773], [-118.35498, 34.090777], [-118.351805, 34.090753], [-118.347243, 34.090718], [-118.34338, 34.090699], [-118.343388, 34.088928], [-118.344059, 34.088893], [-118.348663, 34.08893], [-118.352802, 34.088962], [-118.3528, 34.087129], [-118.353233, 34.087132], [-118.354273, 34.08714], [-118.357395, 34.087166], [-118.361443, 34.087201], [-118.361356, 34.090808]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037700102", "census_tract_name": "Census Tract 7001.02", "cluster": 8, "color": [0.7294117647058823, 0.8652364475201846, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 6.0, "num_charging_stations_range": [16.0, 46.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_b6426f412e911ebd10273df0788bc8b4.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_f6d75e1aa3ca591ae15f41d69940acf1_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#badc00", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_f6d75e1aa3ca591ae15f41d69940acf1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f6d75e1aa3ca591ae15f41d69940acf1 = L.geoJson(null, {
+                onEachFeature: geo_json_f6d75e1aa3ca591ae15f41d69940acf1_onEachFeature,
+            
+                style: geo_json_f6d75e1aa3ca591ae15f41d69940acf1_styler,
+        });
+
+        function geo_json_f6d75e1aa3ca591ae15f41d69940acf1_add (data) {
+            geo_json_f6d75e1aa3ca591ae15f41d69940acf1
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_f6d75e1aa3ca591ae15f41d69940acf1_add({"features": [{"geometry": {"coordinates": [[[-118.377385, 34.094212], [-118.372736, 34.095623], [-118.368961, 34.09781], [-118.368901, 34.097332], [-118.368872, 34.094341], [-118.368853, 34.091752], [-118.369102, 34.090687], [-118.369087, 34.08868], [-118.369088, 34.087101], [-118.370233, 34.087084], [-118.37023, 34.085609], [-118.372485, 34.085438], [-118.372494, 34.088838], [-118.372498, 34.090256], [-118.373174, 34.090149], [-118.373272, 34.090052], [-118.376409, 34.088922], [-118.376244, 34.08951], [-118.376254, 34.09064], [-118.376262, 34.092596], [-118.376285, 34.094393], [-118.377385, 34.094212]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037700300", "census_tract_name": "Census Tract 7003", "cluster": 8, "color": [0.7294117647058823, 0.8652364475201846, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 6.0, "num_charging_stations_range": [16.0, 46.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_f6d75e1aa3ca591ae15f41d69940acf1.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_9264cb1ebf0228b1f817afc291008087_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#e8f300", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_9264cb1ebf0228b1f817afc291008087_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9264cb1ebf0228b1f817afc291008087 = L.geoJson(null, {
+                onEachFeature: geo_json_9264cb1ebf0228b1f817afc291008087_onEachFeature,
+            
+                style: geo_json_9264cb1ebf0228b1f817afc291008087_styler,
+        });
+
+        function geo_json_9264cb1ebf0228b1f817afc291008087_add (data) {
+            geo_json_9264cb1ebf0228b1f817afc291008087
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_9264cb1ebf0228b1f817afc291008087_add({"features": [{"geometry": {"coordinates": [[[-118.389727, 34.080881], [-118.385955, 34.083618], [-118.385484, 34.083884], [-118.384014, 34.084876], [-118.38328, 34.085395], [-118.382765, 34.085752], [-118.380625, 34.087167], [-118.376244, 34.08951], [-118.376409, 34.088922], [-118.376951, 34.08863], [-118.377006, 34.084849], [-118.377033, 34.08304], [-118.370302, 34.083157], [-118.370294, 34.080169], [-118.374209, 34.080161], [-118.374202, 34.082019], [-118.375264, 34.080159], [-118.377248, 34.080207], [-118.377167, 34.076592], [-118.378802, 34.07639], [-118.379401, 34.076391], [-118.38061, 34.076709], [-118.38372, 34.07643], [-118.387724, 34.076471], [-118.389733, 34.07649], [-118.389727, 34.080881]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037700400", "census_tract_name": "Census Tract 7004", "cluster": 8, "color": [0.9098039215686274, 0.9550788158400615, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 10.0, "num_charging_stations_range": [8.0, 16.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_9264cb1ebf0228b1f817afc291008087.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_82f3142f9c166842407ca582f79eb310_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#ffba00", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_82f3142f9c166842407ca582f79eb310_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_82f3142f9c166842407ca582f79eb310 = L.geoJson(null, {
+                onEachFeature: geo_json_82f3142f9c166842407ca582f79eb310_onEachFeature,
+            
+                style: geo_json_82f3142f9c166842407ca582f79eb310_styler,
+        });
+
+        function geo_json_82f3142f9c166842407ca582f79eb310_add (data) {
+            geo_json_82f3142f9c166842407ca582f79eb310
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_82f3142f9c166842407ca582f79eb310_add({"features": [{"geometry": {"coordinates": [[[-118.384459, 34.093557], [-118.38337, 34.093724], [-118.381183, 34.093323], [-118.381181, 34.092104], [-118.379881, 34.092683], [-118.379107, 34.093066], [-118.377385, 34.094212], [-118.376285, 34.094393], [-118.376262, 34.092596], [-118.376254, 34.09064], [-118.376244, 34.08951], [-118.380625, 34.087167], [-118.382765, 34.085752], [-118.38328, 34.085395], [-118.384448, 34.087181], [-118.384433, 34.090634], [-118.384459, 34.093557]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037700502", "census_tract_name": "Census Tract 7005.02", "cluster": 8, "color": [1.0, 0.7294117647058824, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 7.0, "num_charging_stations_range": [3.0, 8.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_82f3142f9c166842407ca582f79eb310.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_3c0dc727b28b77268100bfe1af5426d6_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#ffe800", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_3c0dc727b28b77268100bfe1af5426d6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_3c0dc727b28b77268100bfe1af5426d6 = L.geoJson(null, {
+                onEachFeature: geo_json_3c0dc727b28b77268100bfe1af5426d6_onEachFeature,
+            
+                style: geo_json_3c0dc727b28b77268100bfe1af5426d6_styler,
+        });
+
+        function geo_json_3c0dc727b28b77268100bfe1af5426d6_add (data) {
+            geo_json_3c0dc727b28b77268100bfe1af5426d6
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_3c0dc727b28b77268100bfe1af5426d6_add({"features": [{"geometry": {"coordinates": [[[-118.395844, 34.091055], [-118.386561, 34.091039], [-118.38553, 34.093203], [-118.384459, 34.093557], [-118.384433, 34.090634], [-118.384448, 34.087181], [-118.38328, 34.085395], [-118.384014, 34.084876], [-118.385484, 34.083884], [-118.385955, 34.083618], [-118.389727, 34.080881], [-118.389745, 34.081164], [-118.389762, 34.084872], [-118.389763, 34.087282], [-118.389755, 34.088495], [-118.395846, 34.090586], [-118.395844, 34.091055]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037700501", "census_tract_name": "Census Tract 7005.01", "cluster": 8, "color": [1.0, 0.9098039215686274, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 5.0, "num_charging_stations_range": [3.0, 8.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_3c0dc727b28b77268100bfe1af5426d6.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_bbebfed9258a8ddc8a283614819aee80_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#ff2e00", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_bbebfed9258a8ddc8a283614819aee80_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_bbebfed9258a8ddc8a283614819aee80 = L.geoJson(null, {
+                onEachFeature: geo_json_bbebfed9258a8ddc8a283614819aee80_onEachFeature,
+            
+                style: geo_json_bbebfed9258a8ddc8a283614819aee80_styler,
+        });
+
+        function geo_json_bbebfed9258a8ddc8a283614819aee80_add (data) {
+            geo_json_bbebfed9258a8ddc8a283614819aee80
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_bbebfed9258a8ddc8a283614819aee80_add({"features": [{"geometry": {"coordinates": [[[-118.383769, 34.073584], [-118.38372, 34.07643], [-118.38061, 34.076709], [-118.379401, 34.076391], [-118.378802, 34.07639], [-118.377808, 34.076044], [-118.376589, 34.076037], [-118.37649, 34.073382], [-118.376419, 34.071466], [-118.376389, 34.071039], [-118.375755, 34.070097], [-118.376182, 34.069336], [-118.382669, 34.069688], [-118.383755, 34.069766], [-118.383764, 34.072122], [-118.383769, 34.073584]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037214902", "census_tract_name": "Census Tract 2149.02", "cluster": 8, "color": [1.0, 0.18039215686274512, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 14.0, "num_charging_stations_range": [1.0, 2.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_bbebfed9258a8ddc8a283614819aee80.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_1e256673eb0f3b1ea6c56aa717593d1c_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#ffe800", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_1e256673eb0f3b1ea6c56aa717593d1c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1e256673eb0f3b1ea6c56aa717593d1c = L.geoJson(null, {
+                onEachFeature: geo_json_1e256673eb0f3b1ea6c56aa717593d1c_onEachFeature,
+            
+                style: geo_json_1e256673eb0f3b1ea6c56aa717593d1c_styler,
+        });
+
+        function geo_json_1e256673eb0f3b1ea6c56aa717593d1c_add (data) {
+            geo_json_1e256673eb0f3b1ea6c56aa717593d1c
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_1e256673eb0f3b1ea6c56aa717593d1c_add({"features": [{"geometry": {"coordinates": [[[-118.377006, 34.084849], [-118.376951, 34.08863], [-118.376409, 34.088922], [-118.373272, 34.090052], [-118.373174, 34.090149], [-118.372498, 34.090256], [-118.372494, 34.088838], [-118.372485, 34.085438], [-118.37023, 34.085609], [-118.370233, 34.087084], [-118.369088, 34.087101], [-118.366961, 34.087133], [-118.366949, 34.085452], [-118.366922, 34.081551], [-118.366912, 34.080137], [-118.369036, 34.080131], [-118.370294, 34.080169], [-118.370302, 34.083157], [-118.377033, 34.08304], [-118.377006, 34.084849]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037194402", "census_tract_name": "Census Tract 1944.02", "cluster": 8, "color": [1.0, 0.9098039215686274, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 0.0, "num_charging_stations_range": [0.0, 1.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_1e256673eb0f3b1ea6c56aa717593d1c.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_c178dde32965e738fc4fa5533efe13ee_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#ffe800", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_c178dde32965e738fc4fa5533efe13ee_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c178dde32965e738fc4fa5533efe13ee = L.geoJson(null, {
+                onEachFeature: geo_json_c178dde32965e738fc4fa5533efe13ee_onEachFeature,
+            
+                style: geo_json_c178dde32965e738fc4fa5533efe13ee_styler,
+        });
+
+        function geo_json_c178dde32965e738fc4fa5533efe13ee_add (data) {
+            geo_json_c178dde32965e738fc4fa5533efe13ee
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_c178dde32965e738fc4fa5533efe13ee_add({"features": [{"geometry": {"coordinates": [[[-118.366961, 34.087133], [-118.366443, 34.088924], [-118.365903, 34.088932], [-118.362712, 34.088787], [-118.361443, 34.087201], [-118.36133, 34.085413], [-118.361452, 34.080191], [-118.362651, 34.080147], [-118.366912, 34.080137], [-118.366922, 34.081551], [-118.366949, 34.085452], [-118.366961, 34.087133]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037194401", "census_tract_name": "Census Tract 1944.01", "cluster": 8, "color": [1.0, 0.9098039215686274, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 0.0, "num_charging_stations_range": [0.0, 0.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_c178dde32965e738fc4fa5533efe13ee.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_f21609122c211c95659fa97eea946672_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#ff8a00", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_f21609122c211c95659fa97eea946672_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f21609122c211c95659fa97eea946672 = L.geoJson(null, {
+                onEachFeature: geo_json_f21609122c211c95659fa97eea946672_onEachFeature,
+            
+                style: geo_json_f21609122c211c95659fa97eea946672_styler,
+        });
+
+        function geo_json_f21609122c211c95659fa97eea946672_add (data) {
+            geo_json_f21609122c211c95659fa97eea946672
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_f21609122c211c95659fa97eea946672_add({"features": [{"geometry": {"coordinates": [[[-118.376589, 34.076037], [-118.370008, 34.076067], [-118.370004, 34.072664], [-118.370425, 34.070074], [-118.371391, 34.064109], [-118.372258, 34.064245], [-118.375481, 34.06946], [-118.375755, 34.070097], [-118.376389, 34.071039], [-118.376419, 34.071466], [-118.37649, 34.073382], [-118.376589, 34.076037]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037214800", "census_tract_name": "Census Tract 2148", "cluster": 8, "color": [1.0, 0.5411764705882354, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 1.0, "num_charging_stations_range": [0.0, 0.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_f21609122c211c95659fa97eea946672.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+        function geo_json_e5d53e37481589c40a6bc9f8c94c6b91_styler(feature) {
+            switch(feature.properties.cluster) {
+                default:
+                    return {"color": "#444444", "fillColor": "#ffba00", "fillOpacity": 0.4, "opacity": 1, "weight": 1.5};
+            }
+        }
+
+        function geo_json_e5d53e37481589c40a6bc9f8c94c6b91_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_e5d53e37481589c40a6bc9f8c94c6b91 = L.geoJson(null, {
+                onEachFeature: geo_json_e5d53e37481589c40a6bc9f8c94c6b91_onEachFeature,
+            
+                style: geo_json_e5d53e37481589c40a6bc9f8c94c6b91_styler,
+        });
+
+        function geo_json_e5d53e37481589c40a6bc9f8c94c6b91_add (data) {
+            geo_json_e5d53e37481589c40a6bc9f8c94c6b91
+                .addData(data)
+                .addTo(map_ad61c5db3421477748c18af24336de61);
+        }
+            geo_json_e5d53e37481589c40a6bc9f8c94c6b91_add({"features": [{"geometry": {"coordinates": [[[-118.370004, 34.072664], [-118.370008, 34.076067], [-118.366891, 34.07608], [-118.365844, 34.076085], [-118.36143, 34.076104], [-118.361411, 34.071516], [-118.361401, 34.069055], [-118.364273, 34.06938], [-118.367284, 34.06972], [-118.370425, 34.070074], [-118.370004, 34.072664]]], "type": "Polygon"}, "properties": {"census_tract_id": "1400000US06037214600", "census_tract_name": "Census Tract 2146", "cluster": 8, "color": [1.0, 0.7294117647058824, 0.0, 1.0], "county_name": "Los Angeles County", "num_charging_stations": 1.0, "num_charging_stations_range": [0.0, 0.0], "state_name": "California"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_e5d53e37481589c40a6bc9f8c94c6b91.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["cluster", "census_tract_name", "census_tract_id", "county_name", "state_name", "num_charging_stations", "num_charging_stations_range"];
+    let aliases = ["Cluster:", "Census Tract Name:", "Census Tract ID:", "County Name:", "State Name:", "Current # Chargers:", "Proposed range of chargers:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+</script>
+</html>
